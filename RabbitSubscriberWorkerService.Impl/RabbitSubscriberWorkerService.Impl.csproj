@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RabbitSubscriberWorkerService.Contract\RabbitSubscriberWorkerService.Contract.csproj" />
+    <ProjectReference Include="..\RabbitSubscriberWorkerService.Domain.Objects\RabbitSubscriberWorkerService.Domain.Objects.csproj" />
+    <ProjectReference Include="..\RabbitSubscriberWorkerService.Messaging\RabbitSubscriberWorkerService.Messaging.csproj" />
+  </ItemGroup>
+
+</Project>
