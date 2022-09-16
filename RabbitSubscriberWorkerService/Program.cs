@@ -51,7 +51,7 @@ namespace RabbitSubscriberWorkerService
                   }
                   Configuration = config.Build();
 
-              }).ConfigureServices((hostContext, services) =>
+              }).ConfigureServices((services) =>
               {
                   services.AddSingleton<ISubscriptionManager, SubscriptionManager>();
                   services.AddHostedService<Worker>();
